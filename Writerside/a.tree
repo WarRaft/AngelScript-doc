@@ -6,15 +6,15 @@
                  name="AngelScript"
                  start-page="data-types.md">
 
-    <toc-element topic="test.md">
-        <toc-element topic="Section-Starting-Page.topic"/>
-        <toc-element topic="Tutorial.md"/>
-        <toc-element topic="Reference.md"/>
-        <toc-element topic="Overview.md"/>
-        <toc-element topic="How-to.md"/>
-        <toc-element topic="Starter.md"/>
-    </toc-element>
     <toc-element topic="data-types.md">
         <toc-element topic="void.md"/>
+        <toc-element topic="bool.md"/>
+    </toc-element>
+    <toc-element topic="operator.md"/>
+    <toc-element topic="test.md">
+        <toc-element topic="Tutorial.md"/>
+        <toc-element topic="Reference.md"/>
+        <toc-element topic="How-to.md"/>
+        <toc-element topic="Starter.md"/>
     </toc-element>
 </instance-profile>

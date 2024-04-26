@@ -38,4 +38,12 @@
         <description>Created after removal of "About real" from AngelScript</description>
         <accepts>real.html</accepts>
     </rule>
+    <rule id="2c8d8996">
+        <description>Created after removal of "Section Starting Page" from AngelScript</description>
+        <accepts>Section-Starting-Page.html</accepts>
+    </rule>
+    <rule id="5fcce759">
+        <description>Created after removal of "Overview" from AngelScript</description>
+        <accepts>Overview.html</accepts>
+    </rule>
 </rules>
