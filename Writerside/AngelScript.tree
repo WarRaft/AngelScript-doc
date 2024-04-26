@@ -2,19 +2,20 @@
 <!DOCTYPE instance-profile
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
-<instance-profile id="a"
+<instance-profile id="AngelScript"
                  name="AngelScript"
                  start-page="data-types.md">
 
     <toc-element topic="data-types.md">
         <toc-element topic="void.md"/>
         <toc-element topic="bool.md"/>
+        <toc-element topic="numbers.md">
+            <toc-element topic="integer.md">
+                <toc-element topic="enum.md"/>
+            </toc-element>
+            <toc-element topic="real.md"/>
+            <toc-element topic="number_operator.md"/>
+        </toc-element>
     </toc-element>
     <toc-element topic="operator.md"/>
-    <toc-element topic="test.md">
-        <toc-element topic="Tutorial.md"/>
-        <toc-element topic="Reference.md"/>
-        <toc-element topic="How-to.md"/>
-        <toc-element topic="Starter.md"/>
-    </toc-element>
 </instance-profile>
