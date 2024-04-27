@@ -11,6 +11,8 @@
     </toc-element>
     <toc-element topic="data-types.md">
         <toc-element topic="void.md"/>
+        <toc-element topic="null.md"/>
+        <toc-element topic="nil.md"/>
         <toc-element topic="bool.md"/>
         <toc-element topic="numbers.md">
             <toc-element topic="integer.md">
