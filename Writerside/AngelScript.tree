@@ -21,6 +21,13 @@
             <toc-element topic="real.md"/>
             <toc-element topic="number_operator.md"/>
         </toc-element>
+        <toc-element topic="handle.md"/>
+        <toc-element topic="string.md">
+            <toc-element topic="string_escape.md"/>
+            <toc-element topic="string_operator.md"/>
+            <toc-element topic="string_method.md"/>
+            <toc-element topic="string_function.md"/>
+        </toc-element>
     </toc-element>
     <toc-element topic="operator.md"/>
 </instance-profile>
