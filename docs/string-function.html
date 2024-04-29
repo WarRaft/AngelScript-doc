@@ -1,0 +1,58 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2024-04-30T01:04:13.695379"><title>Функции | AngelScript</title><script type="application/json" id="virtual-toc-data">[{"id":"join","level":0,"title":"join","anchor":"#join"},{"id":"parse","level":0,"title":"parse*","anchor":"#parse"},{"id":"format","level":0,"title":"format*","anchor":"#format"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b259/app.css" rel="stylesheet"><meta name="msapplication-TileColor" content="#000000"><link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Функции | AngelScript"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="AngelScript Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/string-function.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Функции | AngelScript"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/string-function.html#webpage",
+    "url": "writerside-documentation/string-function.html",
+    "name": "Функции | AngelScript",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "AngelScript Help"
+}</script><!-- End Schema.org --></head><body data-id="string_function" data-main-title="Функции" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="data-types.md|Типы данных///string.md|string"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>AngelScript  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="string_function" id="string_function.md">Функции</h1><p id="dfuc95_3267">Встроенные функции для работы со строками.</p><p id="dfuc95_3268"><a href="https://www.angelcode.com/angelscript/sdk/docs/manual/doc_script_stdlib_string.html#doc_datatypes_strings_addon_funcs" id="dfuc95_3269" data-external="true" rel="noopener noreferrer">https://www.angelcode.com/angelscript/sdk/docs/manual/doc_script_stdlib_string.html#doc_datatypes_strings_addon_funcs</a></p><section class="chapter"><h2 id="join" data-toc="join">join</h2><p id="dfuc95_3270">Объединяет все элементы массива строк в строку используя разделитель.</p><div class="code-block" data-lang="cpp">
+string join(const array&lt;string&gt; &amp;in arr, const string &amp;in delimiter)
+</div><dl id="dfuc95_3272" data-style="title-left" data-title-width="narrow"><dt id="dfuc95_3273" data-expandable="false"><code class="code" id="dfuc95_3275">arr</code></dt><dd><p id="dfuc95_3276">Входящая ссылка на массив строк.</p></dd><dt id="dfuc95_3277" data-expandable="false"><code class="code" id="dfuc95_3279">delimiter</code></dt><dd><p id="dfuc95_3280">Строка, которая будет помещена между элементами массива при объединении.</p></dd></dl><div class="code-block" data-lang="cpp">
+string A = join(array&lt;int&gt; = {&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;}, &quot;-&quot;); // &quot;1-2-3-4&quot;
+string B = join(array&lt;int&gt; = {&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;}, &quot;&quot;); // &quot;1234&quot;
+</div></section><section class="chapter"><h2 id="parse" data-toc="parse">parse*</h2><p id="dfuc95_3282">Набор функций для превращения строкового представления числа в число.</p><div class="code-block" data-lang="cpp">
+int64 parseInt(const string &amp;in str, uint base = 10, uint &amp;out byteCount = 0)
+uint64 parseUInt(const string &amp;in str, uint base = 10, uint &amp;out byteCount = 0)
+double parseFloat(const string &amp;in str, uint &amp;out byteCount = 0)
+</div><dl id="dfuc95_3284" data-style="title-left" data-title-width="narrow"><dt id="dfuc95_3285" data-expandable="false"><code class="code" id="dfuc95_3287">arr</code></dt><dd><p id="dfuc95_3288">Входящая ссылка на строку.</p></dd><dt id="dfuc95_3289" data-expandable="false"><code class="code" id="dfuc95_3291">base</code></dt><dd><p id="dfuc95_3292">Основание <a href="integer.html" id="dfuc95_3293" data-tooltip="Набор чисел, который включает все натуральные числа, их отрицательные обратные и ноль.">целого числа</a>. Допустимо только два значения:</p><ul class="list _bullet" id="dfuc95_3294"><li class="list__item" id="dfuc95_3295"><p><code class="code" id="dfuc95_3296">10</code></p></li></ul><ul class="list _bullet" id="dfuc95_3297"><li class="list__item" id="dfuc95_3298"><p><code class="code" id="dfuc95_3299">16</code></p></li></ul></dd><dt id="dfuc95_3300" data-expandable="false"><code class="code" id="dfuc95_3302">byteCount</code></dt><dd><p id="dfuc95_3303"><a href="https://xgm.guru/p/ij/angelscript-function#out" id="dfuc95_3304" data-external="true" rel="noopener noreferrer">Выходное значение</a> в которое устанавливается количество байт, которые были учтены.</p></dd></dl><div class="code-block" data-lang="cpp">
+int64 A = parseInt(&quot;123&quot;); // 123
+uint64 B = parseUInt(&quot;0xBAD&quot;,16); // 2989
+double C = parseFloat(&quot;-1&quot;); // -1.0d
+</div></section><section class="chapter"><h2 id="format" data-toc="format">format*</h2><p id="dfuc95_3306">Набор функций, для превращения числа в строку используя опции форматирования.</p><div class="code-block" data-lang="cpp">
+string formatInt(int64 val, const string &amp;in options = &quot;&quot;, uint width = 0)
+string formatUInt(uint64 val, const string &amp;in options = &quot;&quot;, uint width = 0)
+string formatFloat(double val, const string &amp;in options = &quot;&quot;, uint width = 0, uint precision = 0)
+</div><dl id="dfuc95_3308" data-style="title-left" data-title-width="narrow"><dt id="dfuc95_3309" data-expandable="false"><code class="code" id="dfuc95_3311">val</code></dt><dd><p id="dfuc95_3312">Число, которое необходимо отформатировать.</p></dd><dt id="dfuc95_3313" data-expandable="false"><code class="code" id="dfuc95_3315">options</code></dt><dd><p id="dfuc95_3316">Набор опций форматирования.</p></dd><dt id="dfuc95_3317" data-expandable="false"><code class="code" id="dfuc95_3319">width</code></dt><dd><p id="dfuc95_3320">Минимальная длинна получившейся строки. Недостающие символы будут заполнены пробелами.</p></dd><dt id="dfuc95_3321" data-expandable="false"><code class="code" id="dfuc95_3323">precision</code></dt><dd><p id="dfuc95_3324">Точность для <a href="real.html" id="dfuc95_3325" data-tooltip="Расширение понятия целых и рациональных чисел. Включают в себя все возможные числа на числовой прямой, включая, дробные и иррациональные числа.">вещественных чисел</a>.</p></dd></dl><div class="code-block" data-lang="cpp">
+// l - выравнивание по левому краю
+string A = formatInt(3, &quot;&quot;, 5); // &quot;    3&quot;
+string B = formatInt(3, &quot;l&quot;, 5); // &quot;3    &quot;
+
+// 0 - вставляет нули перед число до достижения указанной длины
+string C = formatInt(13, &quot;0&quot;, 5); // &quot;00013&quot;
+string D = formatInt(13, &quot;0&quot;, 1); // &quot;13&quot;
+
+// + - всегда указывать знак, если возможно
+string E = formatInt(3, &quot;+&quot;); // &quot;+3&quot;
+
+// пробел - добавляет перед положительным числом
+string E = formatInt(3, &quot; &quot;); // &quot; 3&quot;
+string F = formatInt(-3, &quot; &quot;); // &quot;-3&quot;
+
+// h - использует шестнадцатеричную запись в нижнем регистре, не применимо для formatFloat
+// H - использует шестнадцатеричную запись в верхнем регистре, не применимо для formatFloat
+string G = formatInt(2989, &quot;h&quot;); // &quot;0xbad&quot;
+string H = formatInt(2989, &quot;H&quot;); // &quot;0xBAD&quot;
+
+// e - экспоненциальная запись в нижнем регистре, только для formatFloat
+// E - экспоненциальная запись в верхнем регистре, только для formatFloat
+string I = formatFloat(1.2345 * 10^4, &quot;e&quot;); // &quot;1.2345e+4&quot;
+string J = formatFloat(1.2345 * 10^4, &quot;E&quot;); // &quot;1.2345E+4&quot;
+</div></section><div class="last-modified">Last modified: 29 April 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="string-method.html" class="navigation-links__prev">Методы</a><a href="operator.html" class="navigation-links__next">Операторы</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b259/app.js"></script></body></html>
