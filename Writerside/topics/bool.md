@@ -78,4 +78,4 @@ bool A = true ^^ true; // false
 bool B = true xor false; // true
 ```
 
-[https://www.angelcode.com/angelscript/sdk/docs/manual/doc_datatypes_primitives.html#bool](https://www.angelcode.com/angelscript/sdk/docs/manual/doc_datatypes_primitives.html#bool)
+<a href="https://www.angelcode.com/angelscript/sdk/docs/manual/doc_datatypes_primitives.html#bool" />

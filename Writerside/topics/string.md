@@ -17,4 +17,4 @@ string D =  "Так"
 
 > Строковые литералы идущие подряд будут объединены в одну строку при компиляции.
 
-[https://www.angelcode.com/angelscript/sdk/docs/manual/doc_datatypes_strings.html](https://www.angelcode.com/angelscript/sdk/docs/manual/doc_datatypes_strings.html)
+<a href="https://www.angelcode.com/angelscript/sdk/docs/manual/doc_datatypes_strings.html" />

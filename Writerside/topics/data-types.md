@@ -6,7 +6,7 @@
 - <a href="null.md" />
 - <a href="nil.md" />
 
-## Примитивы
+## Примитивы {id="primitive"}
 
 - <a href="bool.md" />
 - <a href="integer.md" />

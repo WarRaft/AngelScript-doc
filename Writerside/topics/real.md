@@ -25,4 +25,4 @@ double B = .2;
 > также <tooltip term="NaN">NaN</tooltip>. Для float <tooltip term="NaN">NaN</tooltip> представлено 32-битным
 > числом `0x7fc00000`.
 
-[https://www.angelcode.com/angelscript/sdk/docs/manual/doc_datatypes_primitives.html#real](https://www.angelcode.com/angelscript/sdk/docs/manual/doc_datatypes_primitives.html#real)
+<a href="https://www.angelcode.com/angelscript/sdk/docs/manual/doc_datatypes_primitives.html#real" />

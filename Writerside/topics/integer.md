@@ -51,5 +51,4 @@ uint A = '🍒'; // 0xF09F8D92
 > или [UTF-8](https://ru.wikipedia.org/wiki/UTF-8). На самом деле будут просто прочитаны байты между одинарными
 > кавычками, которые зависят от того, в какой кодировке был сохранён файл скрипта.
 
-
-[https://www.angelcode.com/angelscript/sdk/docs/manual/doc_datatypes_primitives.html#int](https://www.angelcode.com/angelscript/sdk/docs/manual/doc_datatypes_primitives.html#int)
+<a href="https://www.angelcode.com/angelscript/sdk/docs/manual/doc_datatypes_primitives.html#int" />

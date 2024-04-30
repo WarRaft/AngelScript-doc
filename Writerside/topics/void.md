@@ -9,4 +9,4 @@
 void MyFunc (int& out myArg = void) {}
 ```
 
-[https://www.angelcode.com/angelscript/sdk/docs/manual/doc_datatypes_primitives.html#void](https://www.angelcode.com/angelscript/sdk/docs/manual/doc_datatypes_primitives.html#void)
+<a href="https://www.angelcode.com/angelscript/sdk/docs/manual/doc_datatypes_primitives.html#void" />
