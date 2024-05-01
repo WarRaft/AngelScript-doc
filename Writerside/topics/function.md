@@ -2,6 +2,8 @@
 
 # Функции
 
+<a href="https://www.angelcode.com/angelscript/sdk/docs/manual/doc_script_func.html"/>
+
 Функции — это блоки кода, выполняющие определенные операции.
 
 ## main
