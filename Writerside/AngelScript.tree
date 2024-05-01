@@ -6,6 +6,10 @@
                  name="AngelScript"
                  start-page="about.md">
 
+    <toc-element topic="UjAPI.md">
+        <toc-element topic="UjAPI_launcher.md"/>
+        <toc-element topic="UjAPI_CLI.md"/>
+    </toc-element>
     <toc-element topic="about.md">
         <toc-element topic="install.md"/>
     </toc-element>
