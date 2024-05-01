@@ -1,5 +1,7 @@
 # string
 
+<a href="https://www.angelcode.com/angelscript/sdk/docs/manual/doc_datatypes_strings.html"/>
+
 Тип для представления текстовой информации который представляет собой массив байт.
 
 Для определения строки в коде используется одна или три двойных кавычки.
