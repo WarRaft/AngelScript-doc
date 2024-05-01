@@ -1,8 +1,8 @@
 # Функции
 
-Встроенные функции для работы со строками.
-
 <a href="https://www.angelcode.com/angelscript/sdk/docs/manual/doc_script_stdlib_string.html#doc_datatypes_strings_addon_funcs" />
+
+Встроенные функции для работы со строками.
 
 ## join
 

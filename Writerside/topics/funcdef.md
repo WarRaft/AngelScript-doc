@@ -1,5 +1,7 @@
 # funcdef
 
+<a href="https://www.angelcode.com/angelscript/sdk/docs/manual/doc_global_funcdef.html"/>
+
 Объявляет сигнатуру функции для хранения функции в переменной или передачи аргументом.
 
 ```C++

@@ -1,5 +1,7 @@
 # Вещественные числа
 
+<a href="https://www.angelcode.com/angelscript/sdk/docs/manual/doc_datatypes_primitives.html#real" />
+
 Расширение понятия целых и рациональных чисел. Включают в себя все возможные числа на числовой прямой, включая, дробные
 и иррациональные числа.
 
@@ -24,5 +26,3 @@ double B = .2;
 > У вещественных чисел также могут быть дополнительные значения: положительный и отрицательный ноль, бесконечность, а
 > также <tooltip term="NaN">NaN</tooltip>. Для float <tooltip term="NaN">NaN</tooltip> представлено 32-битным
 > числом `0x7fc00000`.
-
-<a href="https://www.angelcode.com/angelscript/sdk/docs/manual/doc_datatypes_primitives.html#real" />

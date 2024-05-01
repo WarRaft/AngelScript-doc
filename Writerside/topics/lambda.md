@@ -1,5 +1,7 @@
 # Анонимные функции
 
+<a href="https://www.angelcode.com/angelscript/sdk/docs/manual/doc_script_anonfunc.html" />
+
 Они же [лямбды](https://w.wiki/9ntk) - функции объявляемые локально.
 
 ```C++

@@ -1,5 +1,7 @@
 # Перегрузка
 
+<a href="https://www.angelcode.com/angelscript/sdk/docs/manual/doc_script_func_overload.html"/>
+
 Объявление нескольких функций в одном пространстве имён с одинаковым именем и различным набором аргументов
 называется [перегрузкой функции](https://learn.microsoft.com/en-us/cpp/cpp/function-overloading?view=msvc-170).
 

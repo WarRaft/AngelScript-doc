@@ -1,5 +1,7 @@
 # Перечисления
 
+<a href="https://www.angelcode.com/angelscript/sdk/docs/manual/doc_global_enums.html" />
+
 Именованные числа, служащие для удобного указания набора значений.
 
 Являются константами, то бишь изменить их значение в процессе исполнения кода невозможно.
@@ -20,5 +22,3 @@ void main(){
     print( E ); // Если нет коллизии имён, явное указание перечисления можно опустить
 }
 ```
-
-https://www.angelcode.com/angelscript/sdk/docs/manual/doc_global_enums.html

@@ -2,6 +2,8 @@
 
 # bool
 
+<a href="https://www.angelcode.com/angelscript/sdk/docs/manual/doc_datatypes_primitives.html#bool" />
+
 Простейший тип, который принимает всего два значения:
 
 {type="narrow"}
@@ -77,5 +79,3 @@ bool B = true or false; // true
 bool A = true ^^ true; // false
 bool B = true xor false; // true
 ```
-
-<a href="https://www.angelcode.com/angelscript/sdk/docs/manual/doc_datatypes_primitives.html#bool" />

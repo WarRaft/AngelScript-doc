@@ -1,8 +1,8 @@
 # Методы
 
-Методы это функции, которые привязаны к объектам.
-
 <a href="https://www.angelcode.com/angelscript/sdk/docs/manual/doc_script_stdlib_string.html#doc_datatypes_strings_addon_mthd" />
+
+Методы это функции, которые привязаны к объектам.
 
 ## length
 
