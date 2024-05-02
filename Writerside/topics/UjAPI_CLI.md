@@ -21,6 +21,11 @@ Command Line Interface
 </def>
 
 <def>
+<title><code>-fullscreen</code></title>
+Запустит приложение в полноэкранном режиме. Опция по умолчанию.
+</def>
+
+<def>
 <title><code>-window</code></title>
 Запустит приложение в оконном режиме.
 </def>
@@ -32,8 +37,27 @@ Command Line Interface
 
 <def>
 <title><code>-nomapsizelimit</code></title>
+Подгружает модуль <code>UnlockMapSize.dll</code> и убирает лимит веса карт в сетевом режиме игры.
+</def>
 
-Подгружает модуль `UnlockMapSize.dll` и убирает лимит веса карт в сетевом режиме игры.
+<def>
+<title><code>-d3d</code></title>
+Использовать Direct3D для отрисовки. Опция по умолчанию.
+</def>
+
+<def>
+<title><code>-opengl</code></title>
+Использовать OpenGL для отрисовки.
+</def>
+
+<def>
+<title><code>-swtnl</code></title>
+Переносит процесс рендеринга с видеокарты на процессор.
+</def>
+
+<def>
+<title><code>-classic</code></title>
+Запуск Reign of Chaos.
 </def>
 
 <def>
@@ -94,6 +118,17 @@ Command Line Interface
 <def>
 <title><code>-as</code></title>
 Включает AngelScript.
+
+{style="narrow"}
+`dev`
+: Включает режим разработчика, которая позволяет получить доступ к функционалу отладки AngelScript.
+
+`console`
+: Включает консоль для вывода лога/ошибок AngelScript.
+
+`nowarnings`
+: Подавляет вывод предупреждений с низким приоритетом.
+
 </def>
 
 <def>
@@ -148,6 +183,18 @@ Command Line Interface
 
 > Путь к карте **всегда** относителен пути исполняемого файла игры, однако для редактора нужно указывать **полный**
 > путь.
+
+</def>
+
+<def>
+<title><code>-datadir</code></title>
+Переопределяет путь к рабочей директории. По словам челов с хайва позволяет оттуда MPQ подгружать.
+
+Пример
+:
+```Bash
+-datadir "D:\War3WorkDir"
+```
 
 </def>
 
