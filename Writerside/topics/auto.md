@@ -8,7 +8,7 @@
 ```C++
 auto A = 1; // int
 auto B = 1 + 2.f; // float
-auto C = 1 + 2.f + 2.d; // double
+auto C = 1 + 2.f + 3.d; // double
 auto o = getLongObjectTypeNameById(id); // позволяет избежать избыточности для длинных имен типов
 ```
 
