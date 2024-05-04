@@ -43,4 +43,5 @@
     <toc-element topic="namespace.md"/>
     <toc-element topic="operator.md"/>
     <toc-element topic="expressions.md"/>
+    <toc-element topic="conditions.md"/>
 </instance-profile>
