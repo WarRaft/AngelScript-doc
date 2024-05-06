@@ -44,4 +44,5 @@
     <toc-element topic="operator.md"/>
     <toc-element topic="expressions.md"/>
     <toc-element topic="conditions.md"/>
+    <toc-element topic="loops.md"/>
 </instance-profile>

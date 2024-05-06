@@ -114,7 +114,7 @@ int GetMyEnumValue(int myInt){
     switch(myInt){
         case MyEnum::A:
            return MyEnum::A;
-        // Если myInt не является одни из значений MyEnum используем MyEnum::B в качестве значения по умолчанию. 
+        // Если myInt не является одни из значений MyEnum, используем MyEnum::B в качестве значения по умолчанию. 
         default: 
         case MyEnum::B:
            return MyEnum::B;
