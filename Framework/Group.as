@@ -18,7 +18,7 @@ class Group {
         return GroupGetUnitByIndex(g, index);
     }
 
-    Group@ opAssign(const Group &in other) {
+    Group@opAssign(const Group &in other) {
         GroupClear(g);
         GroupAddGroupEx(g, other.g);
         return this;
@@ -28,13 +28,13 @@ class Group {
         GroupAddGroupEx(g, other.g);
     }
 
-    Group@ opAddAssign(const Group &in other) {
+    Group@opAddAssign(const Group &in other) {
         // native GroupAddGroupEx takes group destGroup, group sourceGroup returns integer
         GroupAddGroupEx(g, other.g);
         return this;
     }
 
-    Group@ opSubAssign(const Group &in other) {
+    Group@opSubAssign(const Group &in other) {
         // native GroupRemoveGroupEx takes group destGroup, group sourceGroup returns integer
         GroupRemoveGroupEx(g, other.g);
         return this;
@@ -44,7 +44,7 @@ class Group {
         GroupRemoveGroupEx(g, other.g);
     }
 
-    Group@ clear() {
+    Group@clear() {
         // native GroupClear takes group whichGroup returns nothing
         GroupClear(g);
         return this;
@@ -55,7 +55,7 @@ class Group {
         return GroupGetCount(g);
     }
 
-    Group@ remove(unit u) {
+    Group@remove(unit u) {
         // native GroupRemoveUnit takes group whichGroup, unit whichUnit returns nothing
         GroupRemoveUnit(g, u);
         return this;
@@ -66,13 +66,13 @@ class Group {
         return GroupContainsUnit(g, u);
     }
 
-    Group@ insert(unit u) {
+    Group@insert(unit u) {
         // native GroupAddUnit takes group whichGroup, unit whichUnit returns nothing
         GroupAddUnit(g, u);
         return this;
     }
 
-    Group@ insert(float x, float y, float radius, uint limit = 0) {
+    Group@insert(float x, float y, float radius, uint limit = 0) {
         // native GroupEnumUnitsInRangeOfLoc takes group whichGroup, location whichLocation, real radius, boolexpr filter returns nothing
         // native GroupEnumUnitsInRange takes group whichGroup, real x, real y, real radius, boolexpr filter returns nothing
         // native GroupEnumUnitsInRangeCounted takes group whichGroup, real x, real y, real radius, boolexpr filter, integer countLimit returns nothingƒ
@@ -82,7 +82,7 @@ class Group {
         return this;
     }
 
-    Group@ insert(rect r, uint limit = 0) {
+    Group@insert(rect r, uint limit = 0) {
         // native GroupEnumUnitsInRect takes group whichGroup, rect r, boolexpr filter returns nothing
         // native GroupEnumUnitsInRectCounted takes group whichGroup, rect r, boolexpr filter, integer countLimit returns nothing
         if (limit > 0) GroupEnumUnitsInRectCounted(g, r, nil, limit);
@@ -90,16 +90,18 @@ class Group {
         return this;
     }
 
-    void each(const GroupCallback@&in callback) {
+    Group@each(const GroupCallback@&in callback) {
         for (int i = --GroupGetCount(g); i>=0; i--) {
             callback(GroupGetUnitByIndex(g, index));
         }
+        return this;
     }
 
-    void each(const GroupCallbackFull@&in callback) {
+    Group@each(const GroupCallbackFull@&in callback) {
         for (int i = --GroupGetCount(g); i>=0; i--) {
             callback(this, GroupGetUnitByIndex(g, index));
         }
+        return this;
     }
 }
 
