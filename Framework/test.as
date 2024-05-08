@@ -1,6 +1,6 @@
 class Group {
 
-    Group@ clear() {
+    Group@ clear(scsc c,d f, vdvcdvv c) {
         GroupClear();
         return this;
     }
