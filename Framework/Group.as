@@ -12,8 +12,13 @@ class Group {
         return GroupGetUnitByIndex(g, index);
     }
 
-    Group clear() {
-        GroupClear();
+    Group@ opAssign(const Group &in other) {
+        GroupClear(g);
+        return this;
+    }
+
+    Group@ clear() {
+        GroupClear(g);
         return this;
     }
 
@@ -21,30 +26,23 @@ class Group {
         return GroupGetCount(g);
     }
 
+    Group@ insert(unit u) {
+        GroupAddUnit(g, u);
+        return this;
+    }
+
+    bool contains(unit u) {
+        return GroupContainsUnit(g, u);
+    }
+
 }
 
 /*
 
-native GroupAddUnit takes group whichGroup, unit whichUnit returns nothing
-native GroupRemoveUnit takes group whichGroup, unit whichUnit returns nothing
-
-
 // Group API
-
-native GroupContainsUnit takes group whichGroup, unit whichUnit returns boolean
-
-native GroupForEachUnit takes group whichGroup returns unit // this mimics FristOfGroup, but each consecutive call will pick next unit. DO NOT USE this with GroupRemoveUnit, as it will break it.
 
 native GroupAddGroupEx takes group destGroup, group sourceGroup returns integer
 native GroupRemoveGroupEx takes group destGroup, group sourceGroup returns integer
-
-
-native HandleToGroup takes handle h returns group
-
-
-constant native IsUnitInGroup takes unit whichUnit, group whichGroup returns boolean
-
-constant native IsUnitInForce takes unit whichUnit, force whichForce returns boolean
 
 
 native GroupEnumUnitsOfPlayer takes group whichGroup, player whichPlayer, boolexpr filter returns nothing
