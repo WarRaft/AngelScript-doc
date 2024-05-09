@@ -114,7 +114,7 @@ class Group {
         return this;
     }
 
-    Group@ each(const GroupCallback@ &in callback) {
+    Group@ each(GroupCallback@ callback) {
         for (int i = GroupGetCount(g) - 1; i >= 0; --i) {
             callback(GroupGetUnitByIndex(g, i), this);
         }
