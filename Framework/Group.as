@@ -80,7 +80,7 @@ class Group {
         // native GroupEnumUnitsOfType takes group whichGroup, string unitname, boolexpr filter returns nothing
         // native GroupEnumUnitsOfTypeCounted takes group whichGroup, string unitname, boolexpr filter, integer countLimit returns nothing
         if (limit > 0) GroupEnumUnitsOfTypeCounted(g, type, nil, limit);
-        else GroupEnumUnitsOfType(g, type, radius, nil);
+        else GroupEnumUnitsOfType(g, type, nil);
         return this;
     }
 
@@ -111,8 +111,8 @@ class Group {
     }
 
     Group@ each(const GroupCallback@ &in callback) {
-        for (int i = --GroupGetCount(g); i>=0; i--) {
-            callback(GroupGetUnitByIndex(g, index), this);
+        for (int i = --GroupGetCount(g); i >= 0; --i) {
+            callback(GroupGetUnitByIndex(g, i), this);
         }
         return this;
     }
