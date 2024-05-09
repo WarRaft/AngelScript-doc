@@ -12,9 +12,13 @@ class Group {
     // native CreateGroup takes nothing returns group
     private group g = CreateGroup();
 
-    unit get_opIndex(int index) const {
+    unit get_opIndex(int index) property {
         // native GroupGetUnitByIndex takes group whichGroup, integer index returns unit
         return GroupGetUnitByIndex(g, index);
+    }
+
+    void set_opIndex(int index, unit u) property {
+        return GroupAddUnit(g, u);
     }
 
     Group@ opAssign(const Group@ &in other) {
