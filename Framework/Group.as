@@ -18,7 +18,7 @@ class Group {
     }
 
     void set_opIndex(int index, unit u) property {
-        return GroupAddUnit(g, u);
+        GroupAddUnit(g, u);
     }
 
     Group@ opAssign(const Group@ &in other) {
