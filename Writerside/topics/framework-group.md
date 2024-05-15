@@ -44,10 +44,12 @@ Group@ insert(unit target)
 <br/>
 
 ```C++
-Group@ insert(string type, uint limit = 0)
+Group@ insert(string unitname, uint limit = 0)
 ```
 
-Все <tooltip term="unit">юниты</tooltip> с типом `type` будут добавлены в группу.
+Все <tooltip term="unit">юниты</tooltip> с именем `unitname` будут добавлены в группу.
+
+> Узнать `unitname` можно в `units.slk`. 
 
 <br/>
 

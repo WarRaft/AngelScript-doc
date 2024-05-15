@@ -80,11 +80,11 @@ class Group {
         return this;
     }
 
-    Group@ insert(string type, uint limit = 0) {
+    Group@ insert(string unitname, uint limit = 0) {
         // native GroupEnumUnitsOfType takes group whichGroup, string unitname, boolexpr filter returns nothing
         // native GroupEnumUnitsOfTypeCounted takes group whichGroup, string unitname, boolexpr filter, integer countLimit returns nothing
-        if (limit > 0) GroupEnumUnitsOfTypeCounted(g, type, nil, limit);
-        else GroupEnumUnitsOfType(g, type, nil);
+        if (limit > 0) GroupEnumUnitsOfTypeCounted(g, unitname, nil, limit);
+        else GroupEnumUnitsOfType(g, unitname, nil);
         return this;
     }
 
