@@ -1,9 +1,7 @@
 # Функционал
 
-## Функционал
-
-- [](ujapi-data-types.md)
-- [](ujapi-data-types.md#converter)
+- [](handle.md)
+- [](handle.md#converter)
 - [Константы](https://xgm.guru/p/ujapi/ujapi-constants)
 - [Тайпкастеры](https://xgm.guru/p/ujapi/ujapi-typecasters)
 - API

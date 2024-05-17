@@ -10,4 +10,8 @@
         <description>Created after removal of "Фреймы" from AngelScript</description>
         <accepts>framework-frames.html</accepts>
     </rule>
+    <rule id="3546fac">
+        <description>Created after removal of "Типы" from AngelScript</description>
+        <accepts>ujapi-data-types.html</accepts>
+    </rule>
 </rules>

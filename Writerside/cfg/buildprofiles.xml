@@ -14,7 +14,17 @@
             <download-title>Скачать UjAPI</download-title>
             <download-page>https://github.com/UnryzeC/UjAPI</download-page>
             <showDownloadButton>true</showDownloadButton>
+
+            <webmaster>nazarpunk@gmail.com</webmaster>
         </variables>
+        <footer>
+
+            <link href="https://discord.com/invite/mpvASEcujC">Discord</link>
+            <link href="https://vk.com/unryzeworkshop">VK</link>
+            <link href="https://xgm.guru/p/ujapi">XGM</link>
+
+            <copyright>2024 WarRaft</copyright>
+        </footer>
     </build-profile>
 
 </buildprofiles>
