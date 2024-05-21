@@ -3,17 +3,18 @@
 funcdef void GroupCallback(unit, const Group@ &in);
 
 class Group {
-
+    
     ~Group() {
-        // native DestroyGroup takes group whichGroup returns nothing
+        //$jass native DestroyGroup takes group whichGroup returns nothing
         DestroyGroup(g);
     }
 
-    // native CreateGroup takes nothing returns group
+
+    //$jass native CreateGroup takes nothing returns group
     private group g = CreateGroup();
 
     unit get_opIndex(int index) property {
-        // native GroupGetUnitByIndex takes group whichGroup, integer index returns unit
+        //$jass native GroupGetUnitByIndex takes group whichGroup, integer index returns unit
         return GroupGetUnitByIndex(g, index);
     }
 
@@ -32,13 +33,13 @@ class Group {
     }
 
     Group@ opAddAssign(const Group@ &in other) {
-        // native GroupAddGroupEx takes group destGroup, group sourceGroup returns integer
+        //$jass native GroupAddGroupEx takes group destGroup, group sourceGroup returns integer
         GroupAddGroupEx(g, other.g);
         return this;
     }
 
     Group@ opSubAssign(const Group@ &in other) {
-        // native GroupRemoveGroupEx takes group destGroup, group sourceGroup returns integer
+        //$jass native GroupRemoveGroupEx takes group destGroup, group sourceGroup returns integer
         GroupRemoveGroupEx(g, other.g);
         return this;
     }
@@ -48,67 +49,67 @@ class Group {
     }
 
     Group@ clear() {
-        // native GroupClear takes group whichGroup returns nothing
+        //$jass native GroupClear takes group whichGroup returns nothing
         GroupClear(g);
         return this;
     }
 
     unit first() {
-        // native FirstOfGroup takes group whichGroup returns unit
+        //$jass native FirstOfGroup takes group whichGroup returns unit
         return FirstOfGroup(g);
     }
 
     uint length() {
-        // native GroupGetCount takes group whichGroup returns integer
+        //$jass native GroupGetCount takes group whichGroup returns integer
         return GroupGetCount(g);
     }
 
     Group@ remove(unit u) {
-        // native GroupRemoveUnit takes group whichGroup, unit whichUnit returns nothing
+        //$jass native GroupRemoveUnit takes group whichGroup, unit whichUnit returns nothing
         GroupRemoveUnit(g, u);
         return this;
     }
 
     bool contains(unit u) {
-        // native GroupContainsUnit takes group whichGroup, unit whichUnit returns boolean
+        //$jass native GroupContainsUnit takes group whichGroup, unit whichUnit returns boolean
         return GroupContainsUnit(g, u);
     }
 
     Group@ insert(unit u) {
-        // native GroupAddUnit takes group whichGroup, unit whichUnit returns nothing
+        //$jass native GroupAddUnit takes group whichGroup, unit whichUnit returns nothing
         GroupAddUnit(g, u);
         return this;
     }
 
     Group@ insert(string unitname, uint limit = 0) {
-        // native GroupEnumUnitsOfType takes group whichGroup, string unitname, boolexpr filter returns nothing
-        // native GroupEnumUnitsOfTypeCounted takes group whichGroup, string unitname, boolexpr filter, integer countLimit returns nothing
+        //$jass native GroupEnumUnitsOfType takes group whichGroup, string unitname, boolexpr filter returns nothing
+        //$jass native GroupEnumUnitsOfTypeCounted takes group whichGroup, string unitname, boolexpr filter, integer countLimit returns nothing
         if (limit > 0) GroupEnumUnitsOfTypeCounted(g, unitname, nil, limit);
         else GroupEnumUnitsOfType(g, unitname, nil);
         return this;
     }
 
     Group@ insert(float x, float y, float radius, uint limit = 0) {
-        // native GroupEnumUnitsInRangeOfLoc takes group whichGroup, location whichLocation, real radius, boolexpr filter returns nothing
-        // native GroupEnumUnitsInRange takes group whichGroup, real x, real y, real radius, boolexpr filter returns nothing
-        // native GroupEnumUnitsInRangeCounted takes group whichGroup, real x, real y, real radius, boolexpr filter, integer countLimit returns nothingƒ
-        // native GroupEnumUnitsInRangeOfLocCounted takes group whichGroup, location whichLocation, real radius, boolexpr filter, integer countLimit returns nothing
+        //$jass native GroupEnumUnitsInRangeOfLoc takes group whichGroup, location whichLocation, real radius, boolexpr filter returns nothing
+        //$jass native GroupEnumUnitsInRange takes group whichGroup, real x, real y, real radius, boolexpr filter returns nothing
+        //$jass native GroupEnumUnitsInRangeCounted takes group whichGroup, real x, real y, real radius, boolexpr filter, integer countLimit returns nothing
+        //$jass native GroupEnumUnitsInRangeOfLocCounted takes group whichGroup, location whichLocation, real radius, boolexpr filter, integer countLimit returns nothing
         if (limit > 0) GroupEnumUnitsInRangeCounted(g, x, y, radius, nil, limit);
         else GroupEnumUnitsInRange(g, x, y, radius, nil);
         return this;
     }
 
     Group@ insert(rect r, uint limit = 0) {
-        // native GroupEnumUnitsInRect takes group whichGroup, rect r, boolexpr filter returns nothing
-        // native GroupEnumUnitsInRectCounted takes group whichGroup, rect r, boolexpr filter, integer countLimit returns nothing
+        //$jass native GroupEnumUnitsInRect takes group whichGroup, rect r, boolexpr filter returns nothing
+        //$jass native GroupEnumUnitsInRectCounted takes group whichGroup, rect r, boolexpr filter, integer countLimit returns nothing
         if (limit > 0) GroupEnumUnitsInRectCounted(g, r, nil, limit);
         else GroupEnumUnitsInRect(g, r, nil);
         return this;
     }
 
     Group@ insert(player p, bool selected = false) {
-        // native GroupEnumUnitsOfPlayer takes group whichGroup, player whichPlayer, boolexpr filter returns nothing
-        // native GroupEnumUnitsSelected takes group whichGroup, player whichPlayer, boolexpr filter returns nothing
+        //$jass native GroupEnumUnitsOfPlayer takes group whichGroup, player whichPlayer, boolexpr filter returns nothing
+        //$jass native GroupEnumUnitsSelected takes group whichGroup, player whichPlayer, boolexpr filter returns nothing
         if (selected) GroupEnumUnitsSelected(g, p, nil);
         else GroupEnumUnitsOfPlayer(g, p, nil);
         return this;
@@ -122,34 +123,34 @@ class Group {
     }
 
     bool order(string order) {
-        // native GroupImmediateOrder takes group whichGroup, string order returns boolean
+        //$jass native GroupImmediateOrder takes group whichGroup, string order returns boolean
         return GroupImmediateOrder(g, order);
     }
 
     bool order(int order) {
-        // native GroupImmediateOrderById takes group whichGroup, integer order returns boolean
+        //$jass native GroupImmediateOrderById takes group whichGroup, integer order returns boolean
         return GroupImmediateOrderById(g, order);
     }
 
     bool order(string order, float x, float y) {
-        // native GroupPointOrder takes group whichGroup, string order, real x, real y returns boolean
-        // native GroupPointOrderLoc takes group whichGroup, string order, location whichLocation returns boolean
+        //$jass native GroupPointOrder takes group whichGroup, string order, real x, real y returns boolean
+        //$jass native GroupPointOrderLoc takes group whichGroup, string order, location whichLocation returns boolean
         return GroupPointOrder(g, order, x, y);
     }
 
     bool order(int order, float x, float y) {
-        // native GroupPointOrderById takes group whichGroup, integer order, real x, real y returns boolean
-        // native GroupPointOrderByIdLoc takes group whichGroup, integer order, location whichLocation returns boolean
+        //$jass native GroupPointOrderById takes group whichGroup, integer order, real x, real y returns boolean
+        //$jass native GroupPointOrderByIdLoc takes group whichGroup, integer order, location whichLocation returns boolean
         return GroupPointOrderById(g, order, x, y);
     }
 
     bool order(string order, widget target) {
-        // native GroupTargetOrder takes group whichGroup, string order, widget targetWidget returns boolean
+        //$jass native GroupTargetOrder takes group whichGroup, string order, widget targetWidget returns boolean
         return GroupTargetOrder(g, order, target);
     }
 
     bool order(int order, widget target) {
-        // native GroupTargetOrderById takes group whichGroup, integer order, widget targetWidget returns boolean
+        //$jass native GroupTargetOrderById takes group whichGroup, integer order, widget targetWidget returns boolean
         return GroupTargetOrderById(g, order, target);
     }
 

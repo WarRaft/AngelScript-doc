@@ -7,7 +7,7 @@
 
 - 1.24e
 - 1.26a
-- 1.27a
+- **1.27a** <sup>[рекомендовано](https://xgm.guru/p/wc3/classic-warcraft-official)</sup> 
 - 1.27b
 - 1.28f
 

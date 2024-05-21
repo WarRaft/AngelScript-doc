@@ -6,6 +6,7 @@
                  name="AngelScript"
                  start-page="about.md">
 
+    <toc-element topic="donate.md"/>
     <toc-element topic="ujapi.md">
         <toc-element topic="UjAPI_launcher.md"/>
         <toc-element topic="UjAPI_CLI.md"/>
