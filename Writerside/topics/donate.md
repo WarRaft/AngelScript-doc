@@ -5,4 +5,4 @@
 
 - [PayPal](https://paypal.me/Unryze)
 - [Monobank](https://send.monobank.ua/jar/7uKvD6jK8T)
-- `+79525508033` номер по СБП
+- `+79525508033` номер по СБП(Сбер или Тинькофф)
