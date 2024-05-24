@@ -3,7 +3,9 @@
 <procedure>
 <title>Как пользоваться?</title>
 <step>
-Перенесите <code>AngelScript.dll</code> в папку <code>UjAPI/Modules</code>
+
+Скачайте [AngelScript.dll](https://github.com/UnryzeC/WC3_AngelScript/releases/latest/download/AngelScript.dll) в
+папку `UjAPI/Modules`
 </step>
 <step>
 Запустите <code>UjAPI.exe</code> и отметьте чекбокс <ui-path>AngelScript | Load Library</ui-path>
