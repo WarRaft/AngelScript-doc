@@ -17,6 +17,8 @@
 
             <webmaster>nazarpunk@gmail.com</webmaster>
             <og-image>https://repository-images.githubusercontent.com/792021259/4ab9ba19-b3d6-4249-a2bb-165f444d3981</og-image>
+
+            <include-after-body>include-after-body.html</include-after-body>
         </variables>
         <footer>
 

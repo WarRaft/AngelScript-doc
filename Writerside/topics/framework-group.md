@@ -35,6 +35,7 @@ void main(){
 Добавляет в группу одного или несколько <tooltip term="unit">юнитов</tooltip>.
 
 <br/>
+<br/>
 
 ```C++
 Group@ insert(unit target)
@@ -49,7 +50,7 @@ Group@ insert(string unitname, uint limit = 0)
 
 Все <tooltip term="unit">юниты</tooltip> с именем `unitname` будут добавлены в группу.
 
-> Узнать `unitname` можно в `units.slk`. 
+> Узнать `unitname` можно в `units.slk`.
 
 <br/>
 
