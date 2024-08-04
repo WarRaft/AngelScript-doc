@@ -41,36 +41,31 @@ void main(){
 <tr><td>
 <code-block lang="C++">
 Group@ insert(unit target)
-</code-block>
-Добавляет в группу <tooltip term="unit">юнита</tooltip> <code>target</code>.
+</code-block> Добавляет в группу <tooltip term="unit">юнита</tooltip> <code>target</code>.
 </td></tr>
 
 <tr><td>
 <code-block lang="C++">
 Group@ insert(string unitname, uint limit = 0)
-</code-block>
-Все <tooltip term="unit">юниты</tooltip> с именем <code>unitname</code> будут добавлены в группу. Все <code>unitname</code> перечислены в <code>units.slk</code>.
+</code-block> Все <tooltip term="unit">юниты</tooltip> с именем <code>unitname</code> будут добавлены в группу. Все <code>unitname</code> перечислены в <code>units.slk</code>.
 </td></tr>
 
 <tr><td>
 <code-block lang="C++">
 Group@ insert(float x, float y, float radius, uint limit = 0)
-</code-block>
-Все <tooltip term="unit">юниты</tooltip>, находящиеся на расстоянии <code>radius</code> от точки <code>x</code>, <code>y</code> будут добавлены в группу. Расстояние считается от центра юнита.
+</code-block> Все <tooltip term="unit">юниты</tooltip>, находящиеся на расстоянии <code>radius</code> от точки <code>x</code>, <code>y</code> будут добавлены в группу. Расстояние считается от центра юнита.
 </td></tr>
 
 <tr><td>
 <code-block lang="C++">
 Group@ insert(rect rectangle, uint limit = 0)
-</code-block>
-Добавляет в группу всех <tooltip term="unit">юнитов</tooltip>, находящихся в прямоугольнике <code>rectangle</code>.
+</code-block> Добавляет в группу всех <tooltip term="unit">юнитов</tooltip>, находящихся в прямоугольнике <code>rectangle</code>.
 </td></tr>
 
 <tr><td>
 <code-block lang="C++">
 Group@ insert(player owner, bool selected = false)
-</code-block>
-Если <code>selected</code> равно <code>false</code> добавляет в группу выбранные <tooltip term="unit">юниты</tooltip> игрока <code>owner</code>. Иначе
+</code-block> Если <code>selected</code> равно <code>false</code> добавляет в группу выбранные <tooltip term="unit">юниты</tooltip> игрока <code>owner</code>. Иначе
 добавляет <tooltip term="unit">юниты</tooltip> игрока <code>owner</code>.
 </td></tr>
 
