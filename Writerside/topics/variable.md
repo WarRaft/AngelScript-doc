@@ -26,21 +26,21 @@ int A = 5; // Объявление переменной A типа int с нач
 
 <deflist>
 <def>
-<title><a href="data-types.md#primitive"/></title>
+<title><a href="data-types.md#primitive"/></title> 
 Принимают случайное значение.
 
 > Под переменную помечается участок памяти. Байты записанные туда ранее и станут значением переменной.
 </def>
 <def>
-<title><a href="handle.md"/></title>
+<title><a href="handle.md"/></title> 
 Принимают значение <a href="nil.md" />.
 </def>
 <def>
-<title>Ссылочные типы</title>
+<title>Ссылочные типы</title> 
 Принимают значение <a href="null.md" />.
 </def>
 <def>
-<title>Объекты</title>
+<title>Объекты</title> 
 Принимают значение определённое в базовом конструкторе.
 </def>
 </deflist>
