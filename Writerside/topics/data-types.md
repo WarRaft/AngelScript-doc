@@ -2,21 +2,21 @@
 
 <a href="https://www.angelcode.com/angelscript/sdk/docs/manual/doc_datatypes.html"/>
 
-## Специальные типы
+## Специальные типы {id="system"}
 
-- <a href="void.md" />
-- <a href="null.md" />
-- <a href="nil.md" />
-- <a href="auto.md" />
+- [](void.md)
+- [](null.md)
+- [](nil.md)
+- [](auto.md)
 
 ## Примитивы {id="primitive"}
 
-- <a href="bool.md" />
-- <a href="integer.md" />
-- <a href="enum.md" />
-- <a href="real.md" />
-- <a href="handle.md" />
+- [](bool.md)
+- [](integer.md)
+- [](enum.md)
+- [](real.md)
+- [](handle.md)
 
-## Строки
+## Строки {id="string"}
 
-- <a href="string.md" />
+- [](string.md)

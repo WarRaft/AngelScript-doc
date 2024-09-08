@@ -1,6 +1,6 @@
 # Числа
 
-- <a href="integer.md" />
-- <a href="enum.md" />
-- <a href="real.md" />
-- <a href="number_operator.md" />
+- [](integer.md)
+- [](enum.md)
+- [](real.md)
+- [](number_operator.md)
