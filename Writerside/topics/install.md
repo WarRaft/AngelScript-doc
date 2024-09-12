@@ -31,7 +31,7 @@
 </list>
 </step>
 <step>
-Запустите <a href="https://xgm.guru/p/ujapi">UjAPI</a> со включённой опцией <ui-path>AngelScript</ui-path>.
+Запустите <a href="https://unryzec.github.io/UjAPI">UjAPI</a> со включённой опцией <ui-path>AngelScript</ui-path>.
 </step>
 <step>
 Наслаждайтесь.
