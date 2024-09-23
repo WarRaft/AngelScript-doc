@@ -158,7 +158,7 @@ Group@ each(GroupCallback@ callback)
 `+`, `+=`
 : Сложение
 
-`+`, `+=`
+`-`, `-=`
 : Вычитание
 
 `=`

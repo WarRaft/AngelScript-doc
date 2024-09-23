@@ -5,7 +5,7 @@
 <step>
 
 Скачайте [AngelScript.dll](https://github.com/UnryzeC/WC3_AngelScript/releases/latest/download/AngelScript.dll) в
-папку `UjAPI/Modules`
+папку `UjAPI/UjAPIFiles/Modules`
 </step>
 <step>
 Запустите <code>UjAPI.exe</code> и отметьте чекбокс <ui-path>AngelScript | Load Library</ui-path>
@@ -27,7 +27,7 @@
 Добавьте файл через менеджер импорта или же MPQ по любому из путей:
 <list>
 <li><code>war3map.as</code></li>    
-<li><code>Scripts\\war3map.as</code></li>
+<li><code>Scripts/war3map.as</code></li>
 </list>
 </step>
 <step>
