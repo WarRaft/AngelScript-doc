@@ -15,7 +15,8 @@
             <showDownloadButton>true</showDownloadButton>
 
             <webmaster>nazarpunk@gmail.com</webmaster>
-            <og-image>https://repository-images.githubusercontent.com/792021259/4ab9ba19-b3d6-4249-a2bb-165f444d3981</og-image>
+            <og-image>https://repository-images.githubusercontent.com/792021259/4ab9ba19-b3d6-4249-a2bb-165f444d3981
+            </og-image>
 
             <!-- https://www.jetbrains.com/help/writerside/buildprofiles-xml.html#resizable-sidebar -->
             <resizable-sidebar>true</resizable-sidebar>
@@ -29,8 +30,9 @@
         <footer>
 
             <link href="https://discord.com/invite/mpvASEcujC">Discord</link>
-            <link href="https://vk.com/unryzeworkshop">VK</link>
-            <link href="https://xgm.guru/p/ujapi">XGM</link>
+            <link href="https://unryzec.github.io/UjAPI">UjAPI</link>
+            <link href="https://warraft.github.io/JASS-doc">JASS</link>
+            <link href="https://plugins.jetbrains.com/plugin/23120-jass">JetBrains plugin</link>
 
             <copyright>2024 WarRaft</copyright>
         </footer>
