@@ -1,3 +1,0 @@
-# Тест
-
-Start typing here...

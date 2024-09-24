@@ -3,7 +3,7 @@
 funcdef void GroupCallback(unit, const Group@ &in);
 
 class Group {
-    
+
     ~Group() {
         //$jass native DestroyGroup takes group whichGroup returns nothing
         DestroyGroup(g);
