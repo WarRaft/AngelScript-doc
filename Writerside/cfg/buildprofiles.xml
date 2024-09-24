@@ -6,7 +6,6 @@
 
     <build-profile instance="AngelScript">
         <variables>
-            <offline-docs>true</offline-docs>
             <primary-color>ruby</primary-color>
             <color-preset>contrast</color-preset>
             <noindex-content>false</noindex-content>
@@ -17,6 +16,12 @@
 
             <webmaster>nazarpunk@gmail.com</webmaster>
             <og-image>https://repository-images.githubusercontent.com/792021259/4ab9ba19-b3d6-4249-a2bb-165f444d3981</og-image>
+
+            <!-- https://www.jetbrains.com/help/writerside/buildprofiles-xml.html#resizable-sidebar -->
+            <resizable-sidebar>true</resizable-sidebar>
+
+            <!-- https://www.jetbrains.com/help/writerside/offline-documentation.html-->
+            <offline-docs>true</offline-docs>
 
             <!-- https://www.jetbrains.com/help/writerside/buildprofiles-xml.html#content-max-width -->
             <content-max-width>99999</content-max-width>
