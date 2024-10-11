@@ -19,7 +19,7 @@
 ```C++
 Group A;
 
-void main(){
+void [[[main|main.md]]](){
     Group B;
 }
 ```
@@ -78,7 +78,7 @@ Group@ insert(player owner, bool selected = false)
 ```C++
 Group A;
 
-void main(){
+void [[[main|main.md]]](){
     A
         .insert(CreateUnit(Player(0), 'hpea', 0.f, 0.f, 0.f)) // Создаём крестьянина в центре карты и добавляем в группу
         .insert("footman", 5) // Добавляем в группу пять футманов

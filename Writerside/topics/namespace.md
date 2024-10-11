@@ -19,7 +19,7 @@ namespace NA {
     }
 }
 
-void main(){
+void [[[main|main.md]]](){
     int A = NA::NB::A1; // Доступ к вложенному пространству имён
 }
 ```

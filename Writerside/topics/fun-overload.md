@@ -9,7 +9,7 @@
 void Log(string Msg){}
 void Log(int Msg){}
 
-void main(){
+void [[[main|main.md]]](){
     Log("1"); // Будет вызвана: void Log(string Msg)
     Log(1); // Будет вызвана: void Log(int Msg)
 }
@@ -26,7 +26,7 @@ void main(){
 void A(int64 B){
     print(B);
 }
-void main(){
+void [[[main|main.md]]](){
     A(1); // Передаём числовой литерал, который расценивается как int32
 }
 ```
@@ -41,7 +41,7 @@ void main(){
 ```C++
 void A(int B){}
 void A(const int B){}
-void main(){
+void [[[main|main.md]]](){
     A(1); //Ошибка! Две функции подходят под условие перегрузки
 }
 ```
@@ -53,7 +53,7 @@ void main(){
 ```C++
 void A(int B){}
 void A(int& B){}
-void main(){
+void [[[main|main.md]]](){
 A(1); //Ошибка! Две функции подходят под условие перегрузки
 }
 ```

@@ -5,7 +5,7 @@
 <a href="https://www.angelcode.com/angelscript/sdk/docs/manual/doc_expressions.html"/>
 
 [Выражение](https://w.wiki/9kCz) это комбинация из одной или
-нескольких [переменных](variable.md), [функций](function.md) и [операторов](operator.md), результатом интерпретации
+нескольких [переменных](variable.md), [функций](fun.md) и [операторов](operator.md), результатом интерпретации
 которого становится некоторое значение.
 
 ## Интерпретация

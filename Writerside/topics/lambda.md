@@ -13,19 +13,18 @@ bool Compare(int a, int b, Comparator @comparator){
     return comparator(a,b);
 }
 
-void main() {
+void [[[main|main.md]]]() {
     // Сравниваем числа и ложим результат в переменные
     bool result1 = Compare(1, 2, function(a,b){ return a == b; });
     bool result2 = Compare(3, 4, function(a,b){ return a != b; });
 }
 ```
 
-> Анонимная функция будет использовать сигнатуру, описанную в [funcdef](function.md)
-> поэтому возвращаемый тип и типы аргументов можно опустить.
+> Анонимная функция будет использовать сигнатуру, описанную в [](funcdef.md)
 
 ## Неоднозначность
 
-Если функция [перегружена](function_overload.md) и существует несколько вариантов
+Если функция [перегружена](fun-overload.md) и существует несколько вариантов
 использования, то для избежания неоднозначности можно указать тип аргумента.
 
 ```C++
@@ -34,7 +33,7 @@ funcdef void B(float);
 void Overloaded(A@) {}
 void Overloaded(B@) {}
 
-void main()  {
+void [[[main|main.md]]]()  {
     Overloaded(function(int a) {});
 }
 ```

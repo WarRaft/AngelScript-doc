@@ -12,7 +12,6 @@
 string join(const array<string> &in arr, const string &in delimiter)
 ```
 
-{type="narrow"}
 `arr`
 : Входящая ссылка на массив строк.
 
@@ -34,7 +33,6 @@ uint64 parseUInt(const string &in str, uint base = 10, uint &out byteCount = 0)
 double parseFloat(const string &in str, uint &out byteCount = 0)
 ```
 
-{type="narrow"}
 `arr`
 : Входящая ссылка на строку.
 
@@ -63,7 +61,6 @@ string formatUInt(uint64 val, const string &in options = "", uint width = 0)
 string formatFloat(double val, const string &in options = "", uint width = 0, uint precision = 0)
 ```
 
-{type="narrow"}
 `val`
 : Число, которое необходимо отформатировать.
 

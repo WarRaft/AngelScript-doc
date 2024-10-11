@@ -29,7 +29,7 @@ void SomeFunction(){
    print("SomeFunction\n");
 }
 
-void main(){
+void [[[main|main.md]]](){
    TimerStart(CreateTimer(), 1.f, false, @SomeFunction); // @ используется для создания делегата, в данном случае ссылки на функцию.
    TimerStart( CreateTimer(), 1.f, false, function(){
       print("OnSomeTimerAction\n");

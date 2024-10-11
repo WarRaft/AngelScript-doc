@@ -14,30 +14,34 @@
             <toc-element topic="null.md"/>
             <toc-element topic="nil.md"/>
             <toc-element topic="bool.md"/>
-            <toc-element topic="numbers.md">
+            <toc-element topic="number.md">
                 <toc-element topic="integer.md">
                     <toc-element topic="enum.md"/>
                 </toc-element>
                 <toc-element topic="real.md"/>
-                <toc-element topic="number_operator.md"/>
+                <toc-element topic="number-operator.md"/>
             </toc-element>
             <toc-element topic="handle.md"/>
             <toc-element topic="string.md">
-                <toc-element topic="string_escape.md"/>
-                <toc-element topic="string_operator.md"/>
-                <toc-element topic="string_method.md"/>
-                <toc-element topic="string_function.md"/>
+                <toc-element topic="string-escape.md"/>
+                <toc-element topic="string-operator.md"/>
+                <toc-element topic="string-method.md"/>
+                <toc-element topic="string-function.md"/>
             </toc-element>
             <toc-element topic="auto.md"/>
         </toc-element>
         <toc-element topic="variable.md"/>
         <toc-element topic="array.md">
-            <toc-element topic="array_operator.md"/>
-            <toc-element topic="array_method.md"/>
+            <toc-element topic="array-operator.md"/>
+            <toc-element topic="array-method.md"/>
         </toc-element>
-        <toc-element topic="function.md">
+        <toc-element topic="fun.md">
+            <toc-element topic="fun-call.md"/>
+            <toc-element topic="fun-return.md"/>
+            <toc-element topic="fun-arg.md"/>
+            <toc-element topic="main.md"/>
             <toc-element topic="funcdef.md"/>
-            <toc-element topic="function_overload.md"/>
+            <toc-element topic="fun-overload.md"/>
             <toc-element topic="lambda.md"/>
         </toc-element>
         <toc-element topic="namespace.md"/>
@@ -45,6 +49,11 @@
         <toc-element topic="expressions.md"/>
         <toc-element topic="conditions.md"/>
         <toc-element topic="loops.md"/>
+        <toc-element topic="class.md">
+            <toc-element topic="class-property.md"/>
+            <toc-element topic="class-method.md"/>
+            <toc-element topic="this.md"/>
+        </toc-element>
     </toc-element>
     <toc-element topic="framework.md">
         <toc-element topic="framework-group.md"/>

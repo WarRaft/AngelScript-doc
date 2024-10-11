@@ -26,7 +26,6 @@ uint A = {0,1,2}.length(); // 3
 void resize(uint size)
 ```
 
-{type="narrow"}
 `size`
 : Новый размер массива.
 : - Если значение меньше текущего размера, то массив будет обрезан.
@@ -47,7 +46,7 @@ void reverse()
 ```
 
 ```C++
-void main(){
+void [[[main|main.md]]](){
     array<int> A = {0,1,2,3,4};
     A.reverse(); // [4,3,2,1,0]
 }
@@ -63,7 +62,6 @@ void insertAt(uint index, const array<T>& values)
 void insertLast(const T &in value)
 ```
 
-{style="narrow"}
 `index`
 : Позиция на которую будет вставлен новый элемент
 
@@ -74,7 +72,7 @@ void insertLast(const T &in value)
 : Массив значений которые будут вставлены
 
 ```C++
-void main(){
+void [[[main|main.md]]](){
     array<int> A = {0,1,2,3};
     A.insertAt(1, 9); // [0,9,1,2,3]
 
@@ -96,7 +94,6 @@ void removeRange(uint index, uint count)
 void removeLast()
 ```
 
-{style="narrow"}
 `index`
 : Позиция элемента, который будет удалён.
 
@@ -104,7 +101,7 @@ void removeLast()
 : Количество элементов которые будут удалены.
 
 ```C++
-void main(){
+void [[[main|main.md]]](){
     array<int>A = {0,1,2,3};
     A.removeAt(2); // [0,1,3]
     
@@ -130,7 +127,6 @@ void sort(const &in compareFunc, uint startAt = 0, uint count = uint(-1))
 
 > Для сравнения используется `opCmp` метод.
 
-{style="narrow"}
 `startAt`
 : Позиция элемента, с которого начинается сортировка
 
@@ -141,7 +137,7 @@ void sort(const &in compareFunc, uint startAt = 0, uint count = uint(-1))
 : Функция для сортировки.
 
 ```C++
-void main(){
+void [[[main|main.md]]](){
     array<int>A = {3,2,1,0};    
     A.sortAsc(); // [0,1,2,3]
     
@@ -160,7 +156,7 @@ bool compare(const int &in a, const int &in b){
     return a > b;
 }
 
-void main(){
+void [[[main|main.md]]](){
     array<int> A = {3,2,1,0};
     A.sort(function(a,b) { return a < b; }); // [0,1,2,3]
     A.sort(compare); // [3,2,1,0]
@@ -178,7 +174,6 @@ int findByRef(const T& in value)
 int findByRef(uint startAt, const T& in value)
 ```
 
-{style="narrow"}
 `startAt`
 : Начальный индекс, с которого начнётся поиск
 

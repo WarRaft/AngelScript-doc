@@ -31,7 +31,7 @@ array<array<int>> C(10, array<int>(10));
 void A(array<int> B){}
 void A(array<float> B){}
 
-void main(){
+void [[[main|main.md]]](){
     A({1,2,3,4}); // Вызываем функцию с неявным приведением типа
     A(array<float> = {1,2,3,4}); // Вызываем функцию с явным приведением типа
 }

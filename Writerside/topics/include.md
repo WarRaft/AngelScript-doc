@@ -32,7 +32,7 @@ namespace N {
     #include "A.as"
 }
 
-void main(){
+void [[[main|main.md]]](){
     print(A); 
     print(N::A);
 }
