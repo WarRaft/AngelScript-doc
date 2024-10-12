@@ -53,6 +53,9 @@
             <toc-element topic="class-property.md"/>
             <toc-element topic="class-method.md"/>
             <toc-element topic="this.md"/>
+            <toc-element topic="constructor.md"/>
+            <toc-element topic="destructor.md"/>
+            <toc-element topic="inheritance.md"/>
         </toc-element>
     </toc-element>
     <toc-element topic="framework.md">

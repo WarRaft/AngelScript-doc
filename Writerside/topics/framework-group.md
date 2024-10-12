@@ -16,7 +16,7 @@
 
 Определён только конструктор по умолчанию.
 
-```C++
+```C#
 Group A;
 
 void [[[main|main.md]]](){
@@ -75,7 +75,7 @@ Group@ insert(player owner, bool selected = false)
 : Если значение больше ноля, то добавление закончится когда будет добавлено `limit` <tooltip term="unit">
 юнитов</tooltip>.
 
-```C++
+```C#
 Group A;
 
 void [[[main|main.md]]](){
@@ -92,7 +92,7 @@ void [[[main|main.md]]](){
 
 Удаляет юнита из группы.
 
-```C++
+```C#
 Group@ remove(unit u)
 ```
 
@@ -100,7 +100,7 @@ Group@ remove(unit u)
 
 Возвращает количество юнитов в группе.
 
-```C++
+```C#
 uint length()
 ```
 
@@ -108,7 +108,7 @@ uint length()
 
 Возвращает первого юнита в группе.
 
-```C++
+```C#
 unit first()
 ```
 
@@ -116,7 +116,7 @@ unit first()
 
 Очищает группу.
 
-```C++
+```C#
 Group@ clear()
 ```
 
@@ -124,7 +124,7 @@ Group@ clear()
 
 Возвращает, находится ли юнит в группе.
 
-```C++
+```C#
 bool contains(unit u)
 ```
 
@@ -132,7 +132,7 @@ bool contains(unit u)
 
 Отдаёт приказ всем юнитам в группе.
 
-```C++
+```C#
 bool order(string order)
 bool order(int order)
 bool order(string order, float x, float y)
@@ -145,7 +145,7 @@ bool order(int order, widget target)
 
 Итератор для перебора всех юнитов группы.
 
-```C++
+```C#
 funcdef void GroupCallback(unit, const Group@ &in);
 Group@ each(GroupCallback@ callback)
 ```

@@ -10,11 +10,11 @@
 
 Возвращает размер массива.
 
-```C++
+```C#
 uint length()
 ```
 
-```C++
+```C#
 uint A = {0,1,2}.length(); // 3
 ```
 
@@ -22,7 +22,7 @@ uint A = {0,1,2}.length(); // 3
 
 Изменяет размер массива.
 
-```C++
+```C#
 void resize(uint size)
 ```
 
@@ -32,7 +32,7 @@ void resize(uint size)
 : - Если значение больше текущего размера, то массив будет увеличен до указанного размера.
 Добавленные элементы будут инициализированы [значениями по умолчанию](variable.md#initial-value).
 
-```C++
+```C#
 array<int> A = {0,1,2,3,4,5,6,7,8,9}.resize(4); // [0, 1, 2, 3]
 array<int> B = {0,1,2,3}.resize(10); // [0,1,2,3,0,0,0,0,0,0]
 ```
@@ -41,11 +41,11 @@ array<int> B = {0,1,2,3}.resize(10); // [0,1,2,3,0,0,0,0,0,0]
 
 Изменяет порядок элементов в массиве.
 
-```C++
+```C#
 void reverse()
 ```
 
-```C++
+```C#
 void [[[main|main.md]]](){
     array<int> A = {0,1,2,3,4};
     A.reverse(); // [4,3,2,1,0]
@@ -56,7 +56,7 @@ void [[[main|main.md]]](){
 
 Набор функций, для добавления значений в массив.
 
-```C++
+```C#
 void insertAt(uint index, const T& in value)
 void insertAt(uint index, const array<T>& values)
 void insertLast(const T &in value)
@@ -71,7 +71,7 @@ void insertLast(const T &in value)
 `values`
 : Массив значений которые будут вставлены
 
-```C++
+```C#
 void [[[main|main.md]]](){
     array<int> A = {0,1,2,3};
     A.insertAt(1, 9); // [0,9,1,2,3]
@@ -88,7 +88,7 @@ void [[[main|main.md]]](){
 
 Набор функций для удаления значений из массива.
 
-```C++
+```C#
 void removeAt(uint index)
 void removeRange(uint index, uint count)
 void removeLast()
@@ -100,7 +100,7 @@ void removeLast()
 `count`
 : Количество элементов которые будут удалены.
 
-```C++
+```C#
 void [[[main|main.md]]](){
     array<int>A = {0,1,2,3};
     A.removeAt(2); // [0,1,3]
@@ -117,7 +117,7 @@ void [[[main|main.md]]](){
 
 Набор функций для сортировки элементов массива.
 
-```C++
+```C#
 void sortAsc() // Сортировка по возрастанию
 void sortAsc(uint startAt, uint count)
 void sortDesc() // Сортировка по убыванию
@@ -136,7 +136,7 @@ void sort(const &in compareFunc, uint startAt = 0, uint count = uint(-1))
 `compareFunc`
 : Функция для сортировки.
 
-```C++
+```C#
 void [[[main|main.md]]](){
     array<int>A = {3,2,1,0};    
     A.sortAsc(); // [0,1,2,3]
@@ -151,7 +151,7 @@ void [[[main|main.md]]](){
 Функция, используемая для сравнения. Принимает два аргумента и возвращает `true` или `false`. Если функция
 вернула `true`, то это значит, что первый аргумент будет расположен перед вторым.
 
-```C++
+```C#
 bool compare(const int &in a, const int &in b){
     return a > b;
 }
@@ -167,7 +167,7 @@ void [[[main|main.md]]](){
 
 Набор функций для поиска индекса элемента в массиве. При отсутствии значения будет возвращено отрицательное значение.
 
-```C++
+```C#
 int find(const T& in value)
 int find(uint startAt, const T& in value)
 int findByRef(const T& in value)
@@ -182,7 +182,7 @@ int findByRef(uint startAt, const T& in value)
 
 > Для сравнения используются методы `opEquals` или `opCmp`.
 
-```C++
+```C#
 int A = {0,1,2,3}.find(2); // 2
 int B = {0,1,2,3}.find(3,2); // -1
 ```

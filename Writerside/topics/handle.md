@@ -171,7 +171,7 @@
 
 ## Конвертеры {id="converter"}
 
-```C++
+```C#
 race ConvertRace(uint i)
 alliancetype ConvertAllianceType(uint i)
 racepreference ConvertRacePref(uint i)

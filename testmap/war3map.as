@@ -1,19 +1,21 @@
 class A {
-    string a()       { return "1"; }
-    //string a() const { return "2"; }
+    string s;
+
+    A(string s){
+    this.s = s;
+    }
+
+    ~A() {
+        print(s);
+    }
 }
 
-void main(){
-    A a;
-    A@ b = a;
-    const A@ c = a;
-    A@ const d = a;
+A a("a"); // Класс, присвоеный глобальной переменной не будет уничтожен до конца игры
 
-    print( a.a() ); // 1
-    print( b.a() ); // 1
-    print( c.a() ); // 2
-    print( d.a() ); // 1
+void main() {
+    A b("b");
+    print("1");
+    // После исполнения функции будет вызван деструктор
 }
-
 void config() {
 }

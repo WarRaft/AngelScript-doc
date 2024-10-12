@@ -7,6 +7,6 @@
 - указывает что [функция](https://xgm.guru/p/ij/angelscript-function#void) ничего не возвращает
 - делает опциональным [выходной параметр](https://xgm.guru/p/ij/angelscript-function#out)
 
-```c++
+```C#
 void MyFunc (int& out myArg = void) {}
 ```

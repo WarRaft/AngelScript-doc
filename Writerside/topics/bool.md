@@ -18,7 +18,7 @@
 
 Сохранение значения второго операнда в объект, указанный первым операндом.
 
-```c++
+```C#
 bool A = true;
 ```
 
@@ -27,7 +27,7 @@ bool A = true;
 Логическое [отрицание](https://w.wiki/88Li) - унарная операция результатом которой является значение, противоположное
 исходному.
 
-```c++
+```C#
 bool A = !true; // false
 bool B = not false; // true
 ```
@@ -36,7 +36,7 @@ bool B = not false; // true
 
 Оператор равенства `==` возвращает значение `true`, если его операнды равны. В противном случае возвращается `false`.
 
-```c++
+```C#
 bool A = true == false; // false
 ```
 
@@ -45,7 +45,7 @@ bool A = true == false; // false
 Оператор неравенства `!=` возвращает значение `true`, если его операнды не равны. В противном случае
 возвращается `false`.
 
-```c++
+```C#
 bool A = true != false; // true
 ```
 
@@ -54,7 +54,7 @@ bool A = true != false; // true
 Логическое [И](https://w.wiki/9tF2) - операция, которая возвращает `true` если оба операнда равны `true`. В противном
 случае возвращается `false`.
 
-```c++
+```C#
 bool A = true && true; // true
 bool B = true and false; // false
 ```
@@ -64,7 +64,7 @@ bool B = true and false; // false
 Логическое [ИЛИ](https://w.wiki/9tFE) - операция, которая возвращает `true` если один из операндов равен `true`. В
 противном случае возвращается `false`.
 
-```c++
+```C#
 bool A = true || true; // true
 bool B = true or false; // true
 ```
@@ -74,7 +74,7 @@ bool B = true or false; // true
 Логическое [исключающее ИЛИ](https://w.wiki/5GTh) - операция, которая возвращает `true` если один из операндов
 равен `true`, а второй `false`. В противном случае возвращается `false`.
 
-```c++
+```C#
 bool A = true ^^ true; // false
 bool B = true xor false; // true
 ```

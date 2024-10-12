@@ -8,7 +8,7 @@
 
 Объединяет все элементы массива строк в строку используя разделитель.
 
-```C++
+```C#
 string join(const array<string> &in arr, const string &in delimiter)
 ```
 
@@ -18,7 +18,7 @@ string join(const array<string> &in arr, const string &in delimiter)
 `delimiter`
 : Строка, которая будет помещена между элементами массива при объединении.
 
-```C++
+```C#
 string A = join(array<int> = {"1","2","3","4"}, "-"); // "1-2-3-4"
 string B = join(array<int> = {"1","2","3","4"}, ""); // "1234"
 ```
@@ -27,7 +27,7 @@ string B = join(array<int> = {"1","2","3","4"}, ""); // "1234"
 
 Набор функций для превращения строкового представления числа в число.
 
-```C++
+```C#
 int64 parseInt(const string &in str, uint base = 10, uint &out byteCount = 0)
 uint64 parseUInt(const string &in str, uint base = 10, uint &out byteCount = 0)
 double parseFloat(const string &in str, uint &out byteCount = 0)
@@ -45,7 +45,7 @@ double parseFloat(const string &in str, uint &out byteCount = 0)
 : [Выходное значение](https://xgm.guru/p/ij/angelscript-function#out) в которое устанавливается количество
 байт, которые были учтены.
 
-```C++
+```C#
 int64 A = parseInt("123"); // 123
 uint64 B = parseUInt("0xBAD",16); // 2989
 double C = parseFloat("-1"); // -1.0d
@@ -55,7 +55,7 @@ double C = parseFloat("-1"); // -1.0d
 
 Набор функций, для превращения числа в строку используя опции форматирования.
 
-```C++
+```C#
 string formatInt(int64 val, const string &in options = "", uint width = 0)
 string formatUInt(uint64 val, const string &in options = "", uint width = 0)
 string formatFloat(double val, const string &in options = "", uint width = 0, uint precision = 0)
@@ -73,7 +73,7 @@ string formatFloat(double val, const string &in options = "", uint width = 0, ui
 `precision`
 : Точность для [вещественных чисел](real.md).
 
-```C++
+```C#
 // l - выравнивание по левому краю
 string A = formatInt(3, "", 5); // "    3"
 string B = formatInt(3, "l", 5); // "3    "

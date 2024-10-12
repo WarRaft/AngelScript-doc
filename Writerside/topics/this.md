@@ -2,7 +2,7 @@
 
 [Свойства](class-property.md) и [методы](class-method.md) класса внутри собственного класса доступны по имени:
 
-```C++
+```C#
 class A {
     string b = "b";
     
@@ -24,7 +24,7 @@ void [[[main|main.md]]](){
 Для того чтоб явно обратиться к [свойству](class-property.md) или [методу](class-method.md) собственного класса
 существует ключевое слово `this`:
 
-```C++
+```C#
 class A {
     string b = "b1";
 

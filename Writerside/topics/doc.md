@@ -22,7 +22,7 @@
 
 ## Пример кода
 
-```C++
+```C#
 #include "Scripts\\blizzard.as" // это подключит blizzard.as (транспилированный blizzard.j) в проект.
 
 void SomeFunction(){
