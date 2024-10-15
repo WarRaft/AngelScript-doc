@@ -45,12 +45,12 @@ int A = 5; // Объявление переменной A типа int с нач
 Принимают значение <a href="nil.md" />.
 </def>
 <def>
-<title>Ссылочные типы</title> 
-Принимают значение <a href="null.md" />.
+<title><a href="class.md"/></title> 
+Принимают значение определённое в базовом конструкторе.
 </def>
 <def>
-<title>Объекты</title> 
-Принимают значение определённое в базовом конструкторе.
+<title><a href="class-handle.md"/></title> 
+Принимают значение <a href="null.md" />.
 </def>
 </deflist>
 

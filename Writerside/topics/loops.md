@@ -1,4 +1,4 @@
-<show-structure for="chapter,procedure" depth="2"/>
+<show-structure for="chapter,procedure" depth="3"/>
 
 # Циклы
 

@@ -1,21 +1,11 @@
+string s;
+
 class A {
-    string s;
-
-    A(string s){
-    this.s = s;
-    }
-
-    ~A() {
-        print(s);
-    }
+    string s = s;
 }
-
-A a("a"); // Класс, присвоеный глобальной переменной не будет уничтожен до конца игры
 
 void main() {
-    A b("b");
-    print("1");
-    // После исполнения функции будет вызван деструктор
-}
-void config() {
+    s = "a";
+    A a;
+    print(a.s);
 }

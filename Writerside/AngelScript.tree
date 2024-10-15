@@ -30,7 +30,7 @@
             </toc-element>
             <toc-element topic="auto.md"/>
         </toc-element>
-        <toc-element topic="variable.md"/>
+        <toc-element topic="var.md"/>
         <toc-element topic="array.md">
             <toc-element topic="array-operator.md"/>
             <toc-element topic="array-method.md"/>
@@ -53,8 +53,14 @@
             <toc-element topic="class-property.md"/>
             <toc-element topic="class-method.md"/>
             <toc-element topic="this.md"/>
-            <toc-element topic="constructor.md"/>
+            <toc-element topic="constructor.md">
+                <toc-element topic="constructor-default.md"/>
+                <toc-element topic="constructor-overload.md"/>
+                <toc-element topic="constructor-copy.md"/>
+                <toc-element topic="constructor-cast.md"/>
+            </toc-element>
             <toc-element topic="destructor.md"/>
+            <toc-element topic="class-handle.md"/>
             <toc-element topic="inheritance.md"/>
         </toc-element>
     </toc-element>
