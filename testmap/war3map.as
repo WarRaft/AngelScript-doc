@@ -1,11 +1,11 @@
-string s;
-
 class A {
-    string s = s;
+    string s = "1";
 }
 
+A@ a; // null
+
 void main() {
-    s = "a";
-    A a;
-    print(a.s);
+    // print(a.s); // Ошибка! Null pointer access
+    @a = A();
+    print(a.s); // 1
 }

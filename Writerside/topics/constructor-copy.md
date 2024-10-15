@@ -59,3 +59,30 @@ void [[[main|main.md]]](){
 > [документации](https://www.angelcode.com/angelscript/sdk/docs/manual/doc_script_class_construct.html#doc_script_class_construct_auto)
 > написано, что в некоторых случаях копирующий конструктор будет сгенерирован автоматически. Написать пример это
 > подтверждающий у меня не вышло.
+
+## delete {id="delete"}
+
+Конструктор копирования можно удалить используя ключевое слово `delete`.
+
+```C#
+class A {
+    string s;
+    
+    A(){
+        print("При создании экземпляра b в этом примере будет вызван [[[конструктор по умолчанию|constructor-default.md]]]");
+    }
+ 
+    A(string s){
+        [[[this|this.md]]].s = s;
+    }
+    
+    // Удаляем конструктор копирования
+    A([[[const|var.md#const]]] A [[[&inout|fun-arg.md#inout]]]) delete;
+}
+
+void [[[main|main.md]]](){
+     A a("a");
+     A b = a;
+     print(a.s + b.s); // aa
+}
+```
