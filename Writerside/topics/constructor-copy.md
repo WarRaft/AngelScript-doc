@@ -43,7 +43,7 @@ class A {
     }
     
     // Явно объявляем конструктор копирования
-    A([[[const|var.md#const]]] A [[[&inout|fun-arg.md#inout]]] a) {
+    A([[[const|var.md#const]]] A [[[&inout|fun-arg-handle.md#inout]]] a) {
         s = a.s + "1"; // Добавим единичку, чтоб убедиться в вызове конструктора
     } 
 }
@@ -77,7 +77,7 @@ class A {
     }
     
     // Удаляем конструктор копирования
-    A([[[const|var.md#const]]] A [[[&inout|fun-arg.md#inout]]]) delete;
+    A([[[const|var.md#const]]] A [[[&inout|fun-arg-handle.md#inout]]]) delete;
 }
 
 void [[[main|main.md]]](){

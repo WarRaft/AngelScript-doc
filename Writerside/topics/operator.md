@@ -6,29 +6,29 @@
 <var name="rtl" value="справа налево"/>
 
 <table>
-<tr><td>Оператор</td><td>Перегрузка</td><td>Описание</td><td>Пример</td></tr>
+<tr><td>Оператор</td><td><a href="operator-overload.md">Перегрузка</a></td><td>Описание</td><td>Пример</td></tr>
 
 <tr><td colspan="4">Приоритет: <format style="bold">1</format>, ассоциативность: <format style="bold">нет</format></td></tr>
 <tr><td>::</td><td></td><td>Область видимости</td><td>a::b</td></tr>
 
 <tr><td colspan="4">Приоритет: <format style="bold">2</format>, ассоциативность %ltr%: <format style="bold">%ltr%</format></td></tr>
-<tr><td>[]</td><td>opIndex</td><td>Доступ к индексу</td><td>a[b]</td></tr>
 <tr><td>.</td><td></td><td>Доступ к члену</td><td>a.b</td></tr>
+<tr><td>[]</td><td>opIndex</td><td>Доступ к индексу</td><td>a[b]</td></tr>
 <tr><td>()</td><td>opCall</td><td>Вызов функции</td><td>a(b)</td></tr>
-<tr><td>++</td><td>opPostInc</td><td>Пост-инкремент</td><td>a++</td></tr>
-<tr><td>--</td><td>opPostDec</td><td>Пост-декремент</td><td>a--</td></tr>
+<tr><td>++</td><td><a href="opPostInc.md"/></td><td>Пост-инкремент</td><td>a++</td></tr>
+<tr><td>--</td><td><a href="opPostDec.md"/></td><td>Пост-декремент</td><td>a--</td></tr>
 
 <tr><td colspan="4">Приоритет: <format style="bold">3</format>, ассоциативность: <format style="bold">%rtl%</format></td></tr>
-<tr><td>++</td><td>opPreInc</td><td>Пре-инкремент</td><td>++a</td></tr>
-<tr><td>--</td><td>opPreDec</td><td>Пре-декремент</td><td>--a</td></tr>
-<tr><td>~</td><td>opCom</td><td>Побитовое отрицание</td><td>~a</td></tr>
-<tr><td>!</td><td></td><td>Логическое НЕ</td><td>!a</td></tr>
-<tr><td>not</td><td></td><td>Логическое НЕ</td><td>not a</td></tr>
-<tr><td>-</td><td>opNeg</td><td>Математическая смена знака</td><td>-a</td></tr>
-<tr><td>+</td><td></td><td>Математическое взятие модуля</td><td>+a</td></tr>
-<tr><td>@</td><td></td><td>Ссылка</td><td>@a</td></tr>
-<tr><td>()</td><td></td><td>Приведение типа</td><td>a(b)</td></tr>
-<tr><td>cast</td><td></td><td>Приведение типа</td><td>cast&lt;a&gt;(b)</td></tr>
+<tr><td>++</td><td><a href="opPreInc.md"/></td><td>Пре-инкремент</td><td>++a</td></tr>
+<tr><td>--</td><td><a href="opPreDec.md"/></td><td>Пре-декремент</td><td>--a</td></tr>
+<tr><td>~</td><td><a href="opCom.md"/></td><td>Побитовое отрицание</td><td>~a</td></tr>
+<tr><td>-</td><td><a href="opNeg.md" /></td><td>Математическая смена знака</td><td>-a</td></tr>
+<tr><td>!</td><td rowspan="6"></td><td>Логическое НЕ</td><td>!a</td></tr>
+<tr><td>not</td><td>Логическое НЕ</td><td>not a</td></tr>
+<tr><td>+</td><td>Математическое взятие модуля</td><td>+a</td></tr>
+<tr><td>@</td><td>Ссылка</td><td>@a</td></tr>
+<tr><td>()</td><td>Приведение типа</td><td>a(b)</td></tr>
+<tr><td>cast</td><td>Приведение типа</td><td>cast&lt;a&gt;(b)</td></tr>
 
 <tr><td colspan="4">Приоритет: <format style="bold">4</format>, ассоциативность: <format style="bold">%ltr%</format></td></tr>
 <tr><td>**</td><td>opPow</td><td>Возведение в степень</td><td>a**b</td></tr>
@@ -48,18 +48,19 @@
 <tr><td>&gt;&gt;&gt;</td><td>opUShr</td><td>Битовый сдвиг вправо с заполнением нулями</td><td>a&gt;&gt;&gt;b</td></tr>
 
 <tr><td colspan="4">Приоритет: <format style="bold">8</format>, ассоциативность: <format style="bold">%ltr%</format></td></tr>
-<tr><td>&lt;</td><td>opCmp</td><td>Меньше</td><td>a&lt;b</td></tr>
-<tr><td>&gt;</td><td>opCmp</td><td>Больше</td><td>a&gt;b</td></tr>
-<tr><td>&lt;=</td><td>opCmp</td><td>Меньше или равно</td><td>a&lt;=b</td></tr>
-<tr><td>&gt;=</td><td>opCmp</td><td>Больше или равно</td><td>a&gt;=b</td></tr>
+<tr><td>&lt;</td><td rowspan="4"><a href="opCmp.md"/></td><td>Меньше</td><td>a&lt;b</td></tr>
+<tr><td>&gt;</td><td>Больше</td><td>a&gt;b</td></tr>
+<tr><td>&lt;=</td><td>Меньше или равно</td><td>a&lt;=b</td></tr>
+<tr><td>&gt;=</td><td>Больше или равно</td><td>a&gt;=b</td></tr>
 
 <tr><td colspan="4">Приоритет: <format style="bold">9</format>, ассоциативность: <format style="bold">%ltr%</format></td></tr>
-<tr><td>==</td><td>opEquals</td><td>Равно</td><td>a==b</td></tr>
-<tr><td>!=</td><td>opEquals</td><td>Не равно</td><td>a!=b</td></tr>
-<tr><td>^^</td><td></td><td>Логическое исключающее ИЛИ</td><td>a^^b</td></tr>
-<tr><td>xor</td><td></td><td>Логическое исключающее ИЛИ</td><td>a xor b</td></tr>
-<tr><td>is</td><td>opEquals</td><td>Принадлежит</td><td>a is b</td></tr>
-<tr><td>!is</td><td>opEquals</td><td>Не принадлежит</td><td>a !is b</td></tr>
+<tr><td>==</td><td rowspan="4"><a href="opEquals.md"/></td><td>Равно</td><td>a==b</td></tr>
+<tr><td>!=</td><td>Не равно</td><td>a!=b</td></tr>
+<tr><td>is</td><td>Принадлежит</td><td>a is b</td></tr>
+<tr><td>!is</td><td>Не принадлежит</td><td>a !is b</td></tr>
+<tr><td>^^</td><td rowspan="2"></td><td>Логическое исключающее ИЛИ</td><td>a^^b</td></tr>
+<tr><td>xor</td><td>Логическое исключающее ИЛИ</td><td>a xor b</td></tr>
+
 
 <tr><td colspan="4">Приоритет: <format style="bold">10</format>, ассоциативность: <format style="bold">%ltr%</format></td></tr>
 <tr><td>&amp;</td><td>opAnd</td><td>Битовое И</td><td>a&amp;b</td></tr>
@@ -71,12 +72,12 @@
 <tr><td>|</td><td>opOr</td><td>Битовое ИЛИ</td><td>a|b</td></tr>
 
 <tr><td colspan="4">Приоритет: <format style="bold">13</format>, ассоциативность: <format style="bold">%ltr%</format></td></tr>
-<tr><td>&amp;&amp;</td><td></td><td>Логическое И</td><td>a&amp;&amp;b</td></tr>
-<tr><td>and</td><td></td><td>Логическое И</td><td>a and b</td></tr>
+<tr><td>&amp;&amp;</td><td rowspan="2"></td><td>Логическое И</td><td>a&amp;&amp;b</td></tr>
+<tr><td>and</td><td>Логическое И</td><td>a and b</td></tr>
 
 <tr><td colspan="4">Приоритет: <format style="bold">14</format>, ассоциативность: <format style="bold">%ltr%</format></td></tr>
-<tr><td>||</td><td></td><td>Логическое ИЛИ</td><td>a||b</td></tr>
-<tr><td>or</td><td></td><td>Логическое ИЛИ</td><td>a or b</td></tr>
+<tr><td>||</td><td rowspan="2"></td><td>Логическое ИЛИ</td><td>a||b</td></tr>
+<tr><td>or</td><td>Логическое ИЛИ</td><td>a or b</td></tr>
 
 <tr><td colspan="4">Приоритет: <format style="bold">15</format>, ассоциативность: <format style="bold">%rtl%</format></td></tr>
 <tr><td>? :</td><td></td><td>Тернарный оператор</td><td>a?b:c</td></tr>

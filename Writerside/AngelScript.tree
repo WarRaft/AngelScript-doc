@@ -38,7 +38,9 @@
         <toc-element topic="fun.md">
             <toc-element topic="fun-call.md"/>
             <toc-element topic="fun-return.md"/>
-            <toc-element topic="fun-arg.md"/>
+            <toc-element topic="fun-arg.md">
+                <toc-element topic="fun-arg-handle.md"/>
+            </toc-element>
             <toc-element topic="main.md"/>
             <toc-element topic="funcdef.md"/>
             <toc-element topic="fun-overload.md"/>
@@ -51,7 +53,9 @@
         <toc-element topic="loops.md"/>
         <toc-element topic="class.md">
             <toc-element topic="class-property.md"/>
-            <toc-element topic="class-method.md"/>
+            <toc-element topic="method.md">
+                <toc-element topic="method-const.md"/>
+            </toc-element>
             <toc-element topic="this.md"/>
             <toc-element topic="constructor.md">
                 <toc-element topic="constructor-default.md"/>
@@ -60,7 +64,19 @@
                 <toc-element topic="constructor-cast.md"/>
             </toc-element>
             <toc-element topic="destructor.md"/>
-            <toc-element topic="class-handle.md"/>
+            <toc-element topic="operator-overload.md">
+                <toc-element topic="opCmp.md"/>
+                <toc-element topic="opCom.md"/>
+                <toc-element topic="opEquals.md"/>
+                <toc-element topic="opNeg.md"/>
+                <toc-element topic="opPostDec.md"/>
+                <toc-element topic="opPostInc.md"/>
+                <toc-element topic="opPreDec.md"/>
+                <toc-element topic="opPreInc.md"/>
+            </toc-element>
+            <toc-element topic="class-handle.md">
+                <toc-element topic="class-handle-lifetime.md"/>
+            </toc-element>
             <toc-element topic="inheritance.md"/>
         </toc-element>
     </toc-element>

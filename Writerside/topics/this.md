@@ -1,6 +1,6 @@
 # this
 
-[Свойства](class-property.md) и [методы](class-method.md) класса внутри собственного класса доступны по имени:
+[Свойства](class-property.md) и [методы](method.md) класса внутри собственного класса доступны по имени:
 
 ```C#
 class A {
@@ -21,7 +21,7 @@ void [[[main|main.md]]](){
 }
 ```
 
-Для того чтоб явно обратиться к [свойству](class-property.md) или [методу](class-method.md) собственного класса
+Для того чтоб явно обратиться к [свойству](class-property.md) или [методу](method.md) собственного класса
 существует ключевое слово `this`:
 
 ```C#
@@ -36,7 +36,7 @@ class A {
         string b = "b2"; // Перекрываем [[[свойство|class-property.md]]]
         print(this.b + b); // b1b2
 
-        string c = "c2"; // Перекрываем [[[метод|class-method.md]]]
+        string c = "c2"; // Перекрываем [[[метод|method.md]]]
         print(this.c() + c); // c1c2
     }
 }
