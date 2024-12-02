@@ -2,7 +2,7 @@
 
 # Group.as
 
-<a href="https://github.com/WarRaft/AngelScript-doc/blob/main/Framework/Group.as"/>
+[](https://github.com/WarRaft/AngelScript-doc/blob/main/Framework/Group.as)
 
 Тип `group` встроен в игру и под капотом представляет собой [связанный список](https://w.wiki/7$D5) элементов
 типа `unit`.
@@ -24,10 +24,6 @@ void [[[main|main.md]]](){
 }
 ```
 
-## Деструктор
-
-При уничтожении класса `Group` будет уничтожен игровой объект `group`, таким образом предотвращая утечку памяти.
-
 ## Методы
 
 ### insert
@@ -35,45 +31,54 @@ void [[[main|main.md]]](){
 Добавляет в группу одного или несколько <tooltip term="unit">юнитов</tooltip>.
 
 <table>
-
 <tr><td>Перегрузки</td></tr>
-
 <tr><td>
-<code-block lang="C++">
+
+```c#
 Group@ insert(unit target)
-</code-block> Добавляет в группу <tooltip term="unit">юнита</tooltip> <code>target</code>.
+```
+Добавляет в группу <tooltip term="unit">юнита</tooltip> `target`.
 </td></tr>
 
 <tr><td>
-<code-block lang="C++">
-Group@ insert(string unitname, uint limit = 0)
-</code-block> Все <tooltip term="unit">юниты</tooltip> с именем <code>unitname</code> будут добавлены в группу. Все <code>unitname</code> перечислены в <code>units.slk</code>.
+
+```c#
+Group@ insert(string unitname)
+```
+Все <tooltip term="unit">юниты</tooltip> с именем `unitname` будут добавлены в группу. Все `unitname` перечислены в
+`units.slk`.
 </td></tr>
 
 <tr><td>
-<code-block lang="C++">
-Group@ insert(float x, float y, float radius, uint limit = 0)
-</code-block> Все <tooltip term="unit">юниты</tooltip>, находящиеся на расстоянии <code>radius</code> от точки <code>x</code>, <code>y</code> будут добавлены в группу. Расстояние считается от центра юнита.
+
+```c#
+Group@ insert(float x, float y, float radius)
+```
+
+Все <tooltip term="unit">юниты</tooltip>, находящиеся на расстоянии `radius` от точки `x`, `y` будут добавлены в группу.
+Расстояние считается от центра юнита.
 </td></tr>
 
 <tr><td>
-<code-block lang="C++">
-Group@ insert(rect rectangle, uint limit = 0)
-</code-block> Добавляет в группу всех <tooltip term="unit">юнитов</tooltip>, находящихся в прямоугольнике <code>rectangle</code>.
+
+```c#
+Group@ insert(rect rectangle)
+```
+Добавляет в группу всех <tooltip term="unit">юнитов</tooltip>, находящихся в прямоугольнике rectangle.
 </td></tr>
 
 <tr><td>
-<code-block lang="C++">
+
+```c#
 Group@ insert(player owner, bool selected = false)
-</code-block> Если <code>selected</code> равно <code>false</code> добавляет в группу выбранные <tooltip term="unit">юниты</tooltip> игрока <code>owner</code>. Иначе
+```
+
+Если <code>selected</code> равно <code>false</code> добавляет в группу выбранные <tooltip term="unit">юниты</tooltip>
+игрока <code>owner</code>. Иначе
 добавляет <tooltip term="unit">юниты</tooltip> игрока <code>owner</code>.
 </td></tr>
 
 </table>
-
-`limit`
-: Если значение больше ноля, то добавление закончится когда будет добавлено `limit` <tooltip term="unit">
-юнитов</tooltip>.
 
 ```C#
 Group A;

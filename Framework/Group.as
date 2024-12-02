@@ -158,7 +158,7 @@ class Group {
 
 /*
 // This will be difficult to support with potentially disjoint, cell-based regions
-// as it would involve enumerating all the cells that are covered by a particularregion
+// as it would involve enumerating all the cells that are covered by a particular region
 // a better implementation would be a trigger that adds relevant units as they enter
 // and removes them if they leave...
 native ForGroup takes group whichGroup, code callback returns nothing
