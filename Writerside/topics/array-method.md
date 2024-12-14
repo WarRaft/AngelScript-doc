@@ -18,6 +18,20 @@ uint length()
 uint A = {0,1,2}.length(); // 3
 ```
 
+<warning>
+
+Осторожно! В связи с [багом](https://github.com/UnryzeC/UjAPI/issues/12) при инициализации запятая в конце влияет на
+длину массива.
+```C#
+array<int> a = {1,}; // с запятой в конце
+print(a.length() + "\n"); // 2
+
+array<int> b = {1}; // без запятой в конце
+print(b.length() + "\n"); // 1
+```
+
+</warning>
+
 ## resize
 
 Изменяет размер массива.
@@ -80,7 +94,7 @@ void [[[main|main.md]]](){
     B.insertAt(1, array<int> = {9,8,7}); // [0,9,8,7,1,2,3]
     
     array<int> C = {0,1,2,3};
-    C.insertLat(9); // [0,1,2,3,9]
+    C.insertLast(9); // [0,1,2,3,9]
 }
 ```
 

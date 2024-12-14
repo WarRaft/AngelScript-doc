@@ -1,4 +1,0 @@
-globals
-
-// csfdfdf
-endglobals
