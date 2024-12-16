@@ -105,10 +105,12 @@ void [[[main|main.md]]](){
 
 `war3map.as`
 ```c#
-[[[namespace|namespace.md]]] Map {
-    #include "main.as" // Подключаем внутри [[[пространства имён|namespace.md]]] 
+[[[namespace|namespace.md]]] SomeNamespace {
+    [[[namespace|namespace.md]]] SomeAnotherNamespace {
+        #include "main.as" // [[[Пространство имён|namespace.md]]] никак не влияет на подключение файла
+    } 
 }
-#include "config.as" // Подключаем просто в корне файла
+#include "config.as"
 
 void [[[main|main.md]]](){
     Map::main(); // main
