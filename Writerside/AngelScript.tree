@@ -50,8 +50,17 @@
     <toc-element topic="namespace.md"/>
     <toc-element topic="operator.md"/>
     <toc-element topic="expressions.md"/>
-    <toc-element topic="conditions.md"/>
-    <toc-element topic="loops.md"/>
+    <toc-element topic="conditions.md">
+        <toc-element topic="ternary.md"/>
+        <toc-element topic="if.md"/>
+        <toc-element topic="switch.md"/>
+    </toc-element>
+    <toc-element topic="loops.md">
+        <toc-element topic="while.md"/>
+        <toc-element topic="for.md"/>
+        <toc-element topic="break.md"/>
+        <toc-element topic="continue.md"/>
+    </toc-element>
     <toc-element topic="class.md">
         <toc-element topic="class-property.md"/>
         <toc-element topic="method.md">
